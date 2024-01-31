@@ -1,0 +1,105 @@
+:root {
+ --light: #ffffff;
+  --light-alt: #0b0f18;
+  --dark: #3c4758;
+ }
+ 
+ * {
+  
+  padding: 0;
+
+  font-family: "Fira Sans", sans-serif;
+ }
+ 
+ body {
+  background-color: var(--light-alt);
+  color: var(--light);
+ }
+ 
+ .container {
+    margin-top:60px;
+    max-width: 20rem;
+ 
+    margin:auto;
+    margin-top: 8rem;
+    padding: 32px;
+    border-radius: 30px;
+   background-color: #282836;
+ }
+ 
+ .heading{
+   text-align: center;
+ }
+ 
+ .form{
+   margin-top: 2rem;
+
+   
+ }
+ 
+ .form input {
+   width: 85%;
+   height: 30px;
+   padding: 3px;
+   margin-left: 20px;
+   color: #ffffff;
+   background: rgb(18, 18, 31);
+   outline: none;
+   border: none;
+   border-radius: 8px;
+   
+}
+ 
+ .form button {
+  width: 100px;
+  font-size: 16px;
+   margin-top: 1rem;
+   margin-left: 110px;
+  
+   padding: 8px;
+   border: none;
+   cursor: pointer;
+   color: #ffffff;
+   border-radius: 10px;
+   background-color: rgb(70, 29, 184);
+
+ }
+ 
+ .todo {
+   padding: 10px;
+   border-radius: 13px;
+   background-color: var(--dark);
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: 3fr 0.3fr;
+   transition: 0.5s;
+   cursor: pointer;
+ }
+ 
+ .checkbox {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: var(--light);
+   transition: 0.4s;
+ }
+ 
+ .check-complete .checkbox{
+   background-color: var(--primary); 
+ }
+ 
+ .check-complete .text{
+   text-decoration: line-through;
+ }
+ 
+ 
+ .text {
+   margin-left: 1rem;
+ }
+ 
+ .delete-todo {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+ }
+ 
